@@ -8,10 +8,9 @@ import java.util.List;
 @RestController
 public class HelloworldController {
 
-    @GetMapping("/helloname")
-    public String hello(){
+    @GetMapping("/names")
+    public List<String> names(){
         List<String> names=List.of("yagami","ishida","takenouti","izumi","tatikawa","kido","takaishi");
-
-        return "Hello "+names;
+        return names;
     }
 }
